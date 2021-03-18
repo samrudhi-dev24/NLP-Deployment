@@ -12,6 +12,8 @@ import string , regex
 import nltk
 import gzip
 from nltk.stem import WordNetLemmatizer as wnl
+nltk.download('wordnet')
+
 
 with gzip.open('model_2.pkl', 'rb') as ifp:
     m = pickle.load(ifp)
